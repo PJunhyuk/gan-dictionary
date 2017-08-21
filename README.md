@@ -1,3 +1,5 @@
+# GAN-DICTIONARY
+
 ## 3D-GAN
 
 #### PAPER
@@ -27,7 +29,7 @@
 - 3D Shape Classification
 - Single Image 3D Reconstruction - with Variational image encoder
     > Variational image encoder maps an image to a latent vector for 3D object reconstruction / latent vector to 3D object by 3D-GAN  
-    > VAE-GAN [Larson et al., 2016], TL-Network [Girdhar et al., 2016]
+    > [VAE-GAN](https://github.com/PJunhyuk/gan-dictionary#vae-gan) [Larson et al., 2016], TL-Network [Girdhar et al., 2016]
 
 - - -
 
@@ -42,8 +44,6 @@
 #### CODE
 - Tensorflow: [tf-vaegan](https://github.com/JeremyCCHsu/tf-vaegan)  
 
-#### ETC
-
 #### DISCRIPTION
 
 ###### Structure
@@ -51,3 +51,70 @@
 ###### Result
 
 ###### Extension
+
+- - -
+
+## DiscoGAN
+
+#### PAPER
+[Learning to Discover Cross-Domain Relations with Generative Adversarial Networks](https://arxiv.org/abs/1703.05192)
+
+> Submitted on 15 Mar 2017 (last revised 15 Mar 2017)  
+> Taeksoo Kim, Moonsu Cha, Hyunsoo Kim, Jung Kwon Lee, Jiwon Kim
+
+#### CODE
+- PyTorch(Official): [DiscoGAN](https://github.com/SKTBrain/DiscoGAN)  
+- PyTorch: [DiscoGAN-pytorch](https://github.com/carpedm20/DiscoGAN-pytorch)
+- Tensorflow: [DiscoGAN](https://github.com/ChunyuanLI/DiscoGAN)
+- Chainer: [chainer-DiscoGAN](https://github.com/dhgrs/chainer-DiscoGAN)
+
+#### ETC
+- Summary(Official, Korean): [SK T-Brain Research](https://tinyurl.com/mt333g3)
+- Presentation material(Korean) by Il Gu Yi in Modulabs: [DeepLAB_Paper_library_DiscoGAN](http://www.modulabs.co.kr/DeepLAB_Paper_library/15071)
+
+#### DISCRIPTION
+DiscoGAN can discovery cross-domain relation without pair-labeling dataset.  
+DiscoGAN can handle mode collapse and oscillation problem.  
+
+###### Structure
+- Generator G_AB: Image in style A -> Image in style B  
+- Generator G_BA: Image in style B -> Image in style A  
+- Discriminator D_A: X_A & X_BA (L_D_A)
+- Discriminator D_B: X_B & X_AB (L_D_B)
+- Cycle 1: X_A -> G_AB -> X_AB -> G_BA -> X_ABA  
+- Cycle 2: X_B -> G_BA -> X_BA -> G_AB -> X_BAB  
+- L_const_A = X_A & X_ABA  
+- L_const_B = X_B & X_BAB  
+- L_D_A = X_A & X_BA  
+- L_D_B = X_B & X_AB
+
+
+###### Result
+- Generate image in new type with similar style of original image  
+    - Car to car
+        > Using rendered images of 3D car models with varying azimuth angles, predicts the azimuth angle of a car  
+
+    - Face Conversion
+        > Sharing almost all features  
+        
+        - Translation of gender
+            > Female face to male face with similar mood  
+
+        - Translation of hair color and eyeglasses  
+            >Blond hair to black hair with same face  
+
+        - Translation of face
+    - Chair to Car, Car to Face
+        > Sharing only one features  
+
+        - Images with similar orientation  
+    - Edges to Photos  
+        > Paint in sketch image  
+
+    - Handbag to Shoes, Shoes to Handbag  
+        > Generate handbag image with similar style of original shoe image  
+
+###### Extension
+
+- - -
+
