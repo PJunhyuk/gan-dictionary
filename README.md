@@ -1,6 +1,6 @@
 # GAN-DICTIONARY
 
-## 3D-GAN
+### 3D-GAN
 
 #### PAPER
 [Learning a Probabilistic Latent Space of Object Shapes via 3D Generative-Adversarial Modeling](https://arxiv.org/abs/1610.07584)
@@ -33,7 +33,7 @@
 
 - - -
 
-## VAE-GAN
+### VAE-GAN
 
 #### PAPER
 [Autoencoding beyond pixels using a learned similarity metric](https://arxiv.org/abs/1512.09300)
@@ -54,7 +54,7 @@
 
 - - -
 
-## DiscoGAN
+### DiscoGAN
 
 #### PAPER
 [Learning to Discover Cross-Domain Relations with Generative Adversarial Networks](https://arxiv.org/abs/1703.05192)
@@ -73,8 +73,8 @@
 - Presentation material(Korean) by Il Gu Yi in Modulabs: [DeepLAB_Paper_library_DiscoGAN](http://www.modulabs.co.kr/DeepLAB_Paper_library/15071)
 
 #### DISCRIPTION
-DiscoGAN can discovery cross-domain relation without pair-labeling dataset.  
-DiscoGAN can handle mode collapse and oscillation problem.  
+- DiscoGAN can discovery cross-domain relation without pair-labeling dataset.  
+- DiscoGAN can handle mode collapse and oscillation problem.  
 
 ###### Structure
 - Generator G_AB: Image in style A -> Image in style B  
@@ -101,7 +101,7 @@ DiscoGAN can handle mode collapse and oscillation problem.
             > Female face to male face with similar mood  
 
         - Translation of hair color and eyeglasses  
-            >Blond hair to black hair with same face  
+            > Blond hair to black hair with same face  
 
         - Translation of face
     - Chair to Car, Car to Face
@@ -117,4 +117,34 @@ DiscoGAN can handle mode collapse and oscillation problem.
 ###### Extension
 
 - - -
+
+### Pose Guided Person Image Generation
+
+#### PAPER
+[Pose Guided Person Image Generation](https://arxiv.org/abs/1705.09368)
+
+> Submitted on 25 May 2017 (last revised 19 Jun 2017)  
+> Liqian Ma, Xu Jia, Qianru Sun, Bernt Schiele, Tinne Tuytelaars, Luc Van Gool  
+
+#### CODE
+None
+
+#### ETC
+-
+
+#### DISCRIPTION
+
+###### Structure
+-
+
+###### Result
+-
+
+###### Extension
+-
+
+## Main Reference
+
+- [really-awesome-gan](https://github.com/nightrome/really-awesome-gan)  
+- [the-gan-zoo](https://github.com/hindupuravinash/the-gan-zoo)
 
