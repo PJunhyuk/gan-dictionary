@@ -146,6 +146,20 @@ None
 ###### Extension
 -
 
+- - -
+
+### Auto-Encoding Variational Bayes
+
+#### PAPER
+[Auto-Encoding Variational Bayes](https://arxiv.org/abs/1312.6114)
+
+> Submitted on 20 Dec 2013 (last revised 1 May 2014)
+> Diederik P Kingma, Max Welling
+
+#### DISCRIPTION
+
+- - -
+
 ## Main Reference
 
 - [really-awesome-gan](https://github.com/nightrome/really-awesome-gan)  
