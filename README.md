@@ -179,3 +179,5 @@ None
 ### [CelebFaces Attributes Dataset (CelebA)](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html)
 > A large-scale face attributes dataset with more than 200K celebrity images, each with 40 attribute annotations
 - VAE-GAN(Autoencoding beyond pixels using a learned similarity metric)
+
+Test
