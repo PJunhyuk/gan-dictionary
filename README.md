@@ -130,15 +130,18 @@
 None
 
 #### ETC
--
+None
 
 #### DISCRIPTION
 
 ###### Structure
--
+- Generator at Stage-1(G1): concat of Condition Image & Target pose -> coarse result
+- Generator at Stage-2(G2): concat of Condition Image & coarse result (-> difference map + coarse result) -> refined result
+> skip connection in Generators
+- Discriminator at Stage-2(D): Real pair(Target Image & Condition Image) & Fake pair(refined result & Condition Image)
 
 ###### Result
--
+- Generate person's whole body image with target pose
 
 ###### Extension
 -
@@ -148,3 +151,14 @@ None
 - [really-awesome-gan](https://github.com/nightrome/really-awesome-gan)  
 - [the-gan-zoo](https://github.com/hindupuravinash/the-gan-zoo)
 
+- - -
+
+## Datasets
+
+### [Large-scale Fashion (DeepFashion) Database](http://mmlab.ie.cuhk.edu.hk/projects/DeepFashion.html)
+> A large-scale clothes database
+- Pose Guided Person Image Generation: The DeepFashion (In-shop Clothes Retrieval Benchmark) datset
+
+### [Market-1501 Dataset](http://www.liangzheng.org/Project/project_reid.html)
+> Collected in front of a supermarket in Tsinghua University
+- Pose Guided Person Image Generation
