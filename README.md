@@ -45,12 +45,16 @@
 - Tensorflow: [tf-vaegan](https://github.com/JeremyCCHsu/tf-vaegan)  
 
 #### DISCRIPTION
+- Combine a VAE with a GAN by collapsing the decoder and the generator into one
 
 ###### Structure
+- AE: x -> encoder -> z -> decoder/generator -> x'
+- GAN: x' & x -> discriminator -> REAL / GEN
 
 ###### Result
-
-###### Extension
+- Reconstruct face image with visual attribute vectors
+    > ex. Bald, Bangs, Black hair, Blond hair, etc
+- @TODO
 
 - - -
 
@@ -114,8 +118,6 @@
     - Handbag to Shoes, Shoes to Handbag  
         > Generate handbag image with similar style of original shoe image  
 
-###### Extension
-
 - - -
 
 ### Pose Guided Person Image Generation
@@ -143,9 +145,6 @@ None
 ###### Result
 - Generate person's whole body image with target pose
 
-###### Extension
--
-
 - - -
 
 ### Auto-Encoding Variational Bayes
@@ -171,8 +170,12 @@ None
 
 ### [Large-scale Fashion (DeepFashion) Database](http://mmlab.ie.cuhk.edu.hk/projects/DeepFashion.html)
 > A large-scale clothes database
-- Pose Guided Person Image Generation: The DeepFashion (In-shop Clothes Retrieval Benchmark) datset
+- Pose Guided Person Image Generation: The DeepFashion (In-shop Clothes Retrieval Benchmark) dataset
 
 ### [Market-1501 Dataset](http://www.liangzheng.org/Project/project_reid.html)
 > Collected in front of a supermarket in Tsinghua University
 - Pose Guided Person Image Generation
+
+### [CelebFaces Attributes Dataset (CelebA)](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html)
+> A large-scale face attributes dataset with more than 200K celebrity images, each with 40 attribute annotations
+- VAE-GAN(Autoencoding beyond pixels using a learned similarity metric)
